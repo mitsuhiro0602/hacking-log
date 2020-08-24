@@ -19,9 +19,6 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'sd1f8@fenq8i-y)eg$yx**0(@4c%#07ktn9y13zeuw)b(dl%m('
-
 try:
     from .local_settings import *
 except ImportError:
@@ -91,6 +88,7 @@ DATABASES = {
         'NAME': 'hackinglog', # プロジェクトで使用するデータベース名
         'USER': 'root', # パソコンにインストールしたMySQLのユーザー名
         'PASSWORD': 'mitsu0602', # 同上。そのパスワード
+        'HOST': 'localhost'
     }
 }
 
